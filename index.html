@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Model</title>
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@v0.179.1/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.179.1/examples/jsm/"
+        }
+        }
+</script>
+<style>
+    body {
+      background-color: black;
+      margin: 0;
+      font-family: 'SF Distant Galaxy';
+    }
+
+    #heading {
+      position: fixed;
+      width: 100%;
+      padding: 32px;
+      
+    }
+
+    .border {
+      background: linear-gradient(90deg, gray, 90%, black);
+      height: 2px;
+      width: 80vw;
+      margin-top: 4px;
+    }
+
+    h1 {
+      color: rgb(215, 215, 215);
+      font-size: 4em;
+      margin: 0px;
+      font-weight: 100;
+    }
+</style>
+</head>
+<body>
+    <div id="heading">
+      <h1>RETROPC CHESS</h1>
+      <div class="border"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
